@@ -1,0 +1,160 @@
+.errors {
+    color: red;
+}
+
+.feedback {
+    color: green;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.masthead{
+    background-image: url(../img/mountains-1362775.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 1rem;
+}   
+
+h1, h2, h3{
+    font-family:'Roboto Slab', serif;
+    font-size: 2rem;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    max-width: 50rem;
+    display: block;
+    margin: 0 auto;
+}
+
+nav{
+    padding: 1rem;
+}
+ul{
+   list-style: none;
+   text-decoration: none;
+   display: flex;
+   justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+
+
+.box-1{
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    padding-top:2rem;
+    border-radius: 5px;
+}
+.box-2{
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+}
+.what{
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    position: absolute;
+    top: -20px;
+    border-radius: 2px;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.error{
+    color: red;
+}
+
+input, textarea{
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    padding: 4px;
+}
+.box{
+    display: block;
+}
+
+.btn{
+    background-color: #6293F0;
+    color: white;
+    border-radius: 2px;
+    padding:4px;
+    max-width: 100%;
+
+}
+
+
+
+/* Tablet View */
+@media only screen and (min-width: 25rem) and (max-width: 40rem){
+
+.box-2{
+    margin-bottom: 0;
+}
+
+}
+
+
+
+
+
+
+/* Desktop View */
+@media only screen and (min-width: 40rem) {
+
+
+
+    form{
+        
+        display:inline-flex;
+        
+    }
+
+    .name{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+    label {
+        display: block;
+    }
+    /* .box-1 {
+        padding: 4rem;
+    } */
+    .box-2{
+        /* max-width: 80%; */
+        height: auto;
+        margin: 0 auto;
+        /* margin-bottom: 2rem; */
+    }
+    .btn{
+        max-width: 25%;
+        padding: 0.5rem;
+    }
+    
+}
